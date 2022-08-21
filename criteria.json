@@ -35,14 +35,6 @@
 				]
 			},
 			{
-				"id":"ARIA17",
-				"appCrits": ["1.3.1"],
-				"cat":"sufficient",
-				"tags":["papaya","pear", "group", "input", "user input", "user", "controls", "use controls", "aria"],
-				"content":["User Input",
-					["The role=“group” attribute is used to group related user input controls (role=“radiogroup” is also valid for a group of radio buttons)"]]
-			},
-			{
 				"id":"ARIA16",
 				"appCrits": ["1.3.1"],
 				"cat":"advisory",
@@ -52,6 +44,62 @@
 						"If no relevant page text is available, aria-label may be used instead"
 					]
 				]
+			},
+			{
+				"id":"ARIA17",
+				"appCrits": ["1.3.1"],
+				"cat":"sufficient",
+				"tags":["papaya","pear", "group", "input", "user input", "user", "controls", "use controls", "aria"],
+				"content":["User Input",
+					["The role=“group” attribute is used to group related user input controls (role=“radiogroup” is also valid for a group of radio buttons)"]]
+			},
+			{
+				"id": "G115",
+				"appCrits": ["1.3.1"],
+				"cat": "sufficient",
+				"tags": ["text", "presentation", "table", "links", "JavaScript", "JS"],
+				"content": ["Data Cells and Header Cells",
+					["For tables that associate data cells to header cells via the id and header attributes, verify that they are correctly associated"],
+					"Headings as Images of Text",
+					["Verify that all images of text used as headings follow proper semantic structure. (ex. <h1> followed by <h2>"],
+					"Headings",
+					["Verify that any text styled as a heading also has proper semantic structure. (ex. <h1> followed by <h2>"],
+					"External Links",
+					["Verify that all links (links that point to another page) are marked up with an <a> element"],
+					"Quotations",
+					["Check for references to external resources on the page. If any are present, verify that they are marked up with an <cite> element and the quotation itself is marked up with an <blockquote> element"],
+					"Emboldened Text",
+					["Verify that any text that is emboldened is marked up with an <strong> element"],
+					"Emphasized Text",
+					["Verify that any text that is italicised is marked up with an <em> element"],
+					"Colourised Text",
+					["Verify that all highlighting and background colour used in text to visual convey semantic information is applied through CSS"],
+					"Images of Text",
+					["Check if any images of text are used to convey structural information of the document",
+						["If so, verify that the proper sematic structure is used to convey the information"]],
+					"Stylised Text that Conveys information",
+					["Check for any stylised text that conveys information",
+						["If so, verify that the same information is also conveyed through the text itself (without stylisation)"]],
+					"Elements Presented as Links that use JavaScript Event Handlers",
+					["Verify that the element contains a role=“link” attribute"],
+					["Verify that the link can be activated via keyboard-only interaction"],
+					"Data Tables",
+					["One of the following must be true:",
+						["Headers are marked up with a <th> element"],
+						["THIS DOESN'T MAKE SENSE. NOTE TO CHECK THIS."]]]
+			},
+			{
+				"id": "G117",
+				"appCrits": ["1.3.1"],
+				"cat": "sufficient",
+				"tags": [],
+				"content": ["Visually Distinct Text",
+					["Verify that all text (including lists, links, buttons, etc) that is visually distinctive (e.g. bold, colour, italics, etc) for an equivalent and visible text description"],
+					"Font Variations and Explicit Statements",
+					["Verify that all online documents, if they have gone through multiple draughts, insertions are underlined and deletions are struck-through. At the end of the draught, a \"change history\" lists all changes made to each draught"],
+					"Distinct Font",
+					["Check for any text with information conveyed through distinct fonts",
+						["If any are present, verify that the meaning conveyed is explained to the user"]]]
 			},
 			{
 				"id":"G141",
