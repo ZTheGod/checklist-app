@@ -93,13 +93,16 @@
 				"appCrits": ["1.3.1"],
 				"cat": "sufficient",
 				"tags": [],
+				"img": ["testImage-G117"]
 				"content": ["Visually Distinct Text",
 					["Verify that all text (including lists, links, buttons, etc) that is visually distinctive (e.g. bold, colour, italics, etc) for an equivalent and visible text description"],
 					"Font Variations and Explicit Statements",
 					["Verify that all online documents, if they have gone through multiple draughts, insertions are underlined and deletions are struck-through. At the end of the draught, a \"change history\" lists all changes made to each draught"],
 					"Distinct Font",
 					["Check for any text with information conveyed through distinct fonts",
-						["If any are present, verify that the meaning conveyed is explained to the user"]]]
+						["If any are present, verify that the meaning conveyed is explained to the user"]]
+					["This is an embedded image test",
+						["|IMG-0|"]]]
 			},
 			{
 				"id":"G141",
