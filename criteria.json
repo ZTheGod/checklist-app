@@ -102,7 +102,7 @@
 					["Check for any text with information conveyed through distinct fonts",
 						["If any are present, verify that the meaning conveyed is explained to the user"]],
 					["This is an embedded image test",
-						["|IMG-0|"]]]
+						["|IMG-0| Heading: Web Accessibility Guidelines. List: WCAG 2.0 (New) in bold, WCAG 1.0, Section 508, JIS X 8341-3."]]]
 			},
 			{
 				"id":"G141",
