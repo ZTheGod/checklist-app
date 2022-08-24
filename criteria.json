@@ -154,6 +154,71 @@
 					["Verify that headings are created using an <hx> tag where x is the appropriate heading level from 1 to 6",
 						"Verify that <hx> tags are only used for headings"]]
 			}
+			{
+				"id":"H65",
+				"appCrits": ["1.3.1"],
+				"cat":"sufficient",
+				"tags":[],
+				"content":["Forms",
+					["Verify that if form controls do not have an associated label, there is a peresent and appropriate title attribute",
+						"Verify that <fieldset> is used to group form controls",
+						"Verify that the element immediately following the <fieldset> tag is a <legend> tag"]]
+			}
+			{
+				"id":"H71",
+				"appCrits": ["1.3.1"],
+				"cat":"sufficient",
+				"tags":[],
+				"content":["Verify that grouped form controls are grouped using <fieldset>",
+					"Verify that first element following <fieldset> is <legend>"]			
+			}
+			{
+				"id":"H73",
+				"appCrits": ["1.3.1"],
+				"cat":"sufficient",
+				"tags":[],
+				"content":["Layout tables",
+					["Examine the source code of the HTML or XHTML document for the table element",
+					"If the table is used only to visually lay out elements within the content"
+					 	["Check that the table does not contain any th elements.",
+						"Check that the table element does not contain a non-empty summary attribute.",
+						"Check that the table element does not contain a caption element."]],
+					 "Tables - summary and caption",
+					 ["Verify that complex table structure is explained via <table> summary attribute",
+					 	["Please note: a simple caption may still also use the <caption> tag"]]]
+			}
+			{
+				"id":"H85",
+				"appCrits": ["1.3.1"],
+				"cat":"sufficient",
+				"tags":[],
+				"content":["Forms - option groups",
+					["Verify that <option> groups are defined via <optgroup> tag",
+					"Verify that the <optgroup> tag has a label attribute",
+					"Verify that the <optgroup> tag is the first tag following the <select> tag"]]			
+			}
+			{
+				"id":"H97",
+				"appCrits": ["1.3.1"],
+				"cat":"sufficient",
+				"tags":[],
+				"content":["Section - visual groups",
+					["Verify that if sections of a webpage are grouped for navigation, they are grouped together under a <nav> tag"]]			
+			}
+			{
+				"id":"SCR21",
+				"appCrits": ["1.3.1"],
+				"cat":"sufficient",
+				"tags":[],
+				"content":["DOM manipulation",
+					["Verify that the following functions are not used for creation of new content:"
+						["document.write()",
+						"innerHTML",
+						"outerHTML",
+						"innerText",
+						"outerText"]]]
+			}
+			
 		]
 	},
 	{
