@@ -14,7 +14,7 @@
 				"id":"ARIA12",
 				"appCrits": ["1.3.1"],
 				"cat":"advisory",
-				"tags":["banana","apple", "headings", "aria"],
+				"tags":["aria"],
 				"content":[
 					"Headings",
 					[
@@ -28,7 +28,7 @@
 				"id":"ARIA13",
 				"appCrits": ["1.3.1"],
 				"cat":"advisory",
-				"tags":["orange","mango", "regions", "landmarks", "region landmarks", "aria"],
+				"tags":["regions", "landmarks", "region landmarks", "aria"],
 				"content":["Region Landmarks",
 					["The aria-labelledby attribute is used to associate a page text with UI components.",
 						"If no relevant page text is available, aria-label may be used instead"]
@@ -49,9 +49,66 @@
 				"id":"ARIA17",
 				"appCrits": ["1.3.1"],
 				"cat":"sufficient",
-				"tags":["papaya","pear", "group", "input", "user input", "user", "controls", "use controls", "aria"],
+				"tags":["group", "input", "user input", "user", "controls", "use controls", "aria"],
 				"content":["User Input",
-					["The role=“group” attribute is used to group related user input controls (role=“radiogroup” is also valid for a group of radio buttons)"]]
+					["The role=“group” attribute is used to group related user input controls (role=“radiogroup” is also valid for a group of radio buttons)"],
+					["Verify that the group has an accessible name provided by aria-label or aria-labelledby."]
+				]
+			},
+			{
+				"id":"ARIA20",
+				"appCrits": ["1.3.1"],
+				"cat":"sufficient",
+				"tags":["group", "input", "user input", "user", "controls", "use controls", "aria"],
+				"content":["Regions",
+					["Verify that regions are identified by role=“region” attribute and an programmatically determined name"]
+				]
+			},
+			{
+				"id":"ARIA24",
+				"appCrits": ["1.3.1"],
+				"cat":"sufficient",
+				"tags":["group", "input", "user input", "user", "controls", "use controls", "aria"],
+				"content":["Font Icons", 
+					["The role=“img” is applied to font icons to identify them as such"]
+				]
+			},
+			{
+				"id":"H39",
+				"appCrits": ["1.3.1"],
+				"cat":"sufficient",
+				"tags":["data tables", "layout Tables", "tables", "captions", "summary", "html"],
+				"content":["Data Tables",
+					["Verify that captions are present and applied to data tables via <caption> tags"],
+					"Layout Tables",
+					["Verify that the table contains no caption element",
+						"If the table is used only to visually lay out elements within the content",
+						["Check that the table does not contain any th elements",
+						 "Check that the table element does not contain a non-empty summary attribute.",
+						 "Check that the table element does not contain a caption element."
+						]
+					]
+				]
+			},
+			{
+				"id":"H42",
+				"appCrits": ["1.3.1"],
+				"cat":"sufficient",
+				"tags":["headings", "order", "heading order", "html"],
+				"content":["Check that Headings are Correctly Applied",
+					["Verify that headings are created using an <hx> tag where x is the appropriate heading level from 1 to 6",
+						"Verify that <hx> tags are only used for headings"]]
+			},
+			{
+				"id":"H43",
+				"appCrits": ["1.3.1"],
+				"cat":"sufficient",
+				"tags":["headings", "order", "heading order", "html"],
+				"content":["Data Tables",
+					["Verify that each <th> and <td> in each table has a present and appropriate id or header attribute"],
+					"Layout Tables",
+					["Verify that the table contains no <th> elements"]
+				]
 			},
 			{
 				"id": "G115",
